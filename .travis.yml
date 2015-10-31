@@ -1,0 +1,11 @@
+language: ruby
+
+rvm:
+    - 2.0.0
+
+bundler_args: --without development --deployment
+
+cache: bundler
+
+script:
+    - bundle exec rspec spec
