@@ -1,3 +1,7 @@
+var ButtonToolbar = ReactBootstrap.ButtonToolbar;
+var ButtonGroup = ReactBootstrap.ButtonGroup;
+var Button = ReactBootstrap.Button;
+
 var LifeCounter = React.createClass({
 
   getInitialState() {
@@ -13,11 +17,15 @@ var LifeCounter = React.createClass({
   render: function() {
     return (
       <div>
-        <div>{this.state.life}</div>
-        <button onClick={this.calcLife(1)}>+1</button>
-        <button onClick={this.calcLife(5)}>+5</button>
-        <button onClick={this.calcLife(-1)}>-1</button>
-        <button onClick={this.calcLife(-5)}>-5</button>
+        <div className="life">{this.state.life}</div>
+        <ButtonGroup>
+          <Button onClick={this.calcLife(1)}>+</Button>
+          <Button onClick={this.calcLife(5)}>+5</Button>
+        </ButtonGroup>
+        <ButtonGroup>
+          <Button onClick={this.calcLife(-1)}>-</Button>
+          <Button onClick={this.calcLife(-5)}>-5</Button>
+        </ButtonGroup>
       </div>
     );
   }
