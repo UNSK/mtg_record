@@ -1,0 +1,30 @@
+{
+  "name": "mtg_record",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/UNSK/mtg_record.svg?branch=master)](https://travis-ci.org/UNSK/mtg_record)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UNSK/mtg_record.git"
+  },
+  "author": "UNSK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UNSK/mtg_record/issues"
+  },
+  "homepage": "https://github.com/UNSK/mtg_record#readme",
+  "dependencies": {
+    "browserify": "^10.2.4",
+    "browserify-incremental": "^3.0.1"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "devDependencies": {
+    "react": "^0.14.1",
+    "react-bootstrap": "^0.27.3"
+  }
+}

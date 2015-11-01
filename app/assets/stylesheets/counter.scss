@@ -1,3 +1,10 @@
-// Place all the styles related to the Counter controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+.life-counter {
+    float: left;
+    padding: 10px;
+    .life {
+        text-align: center;
+        font-size: 10em;
+    }
+}
